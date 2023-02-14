@@ -1,0 +1,158 @@
+.header {
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .header-logo {
+  height: 100px;
+  flex-grow: 2;
+  margin: auto 0;
+}
+
+.header .header-logo-img {
+  height: 80px;
+  margin: 10px 50px;
+}
+
+.header .header-find {
+  border: 3px solid white;
+  background: white;
+  margin: auto;
+}
+
+.header .header-find-form {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+.header .header-find-form input {
+  border: 0;
+  /* width: 80%; */
+  flex-grow: 1;
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.header .header-find-form input:focus {
+  outline: 0;
+}
+
+.header .header-find-form button {
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+}
+
+.header .header-information {
+  flex-grow: 2;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.header .header-information > div {
+  display: flex;
+  justify-content: center;
+}
+
+.header .header-information-user:hover .aplication {
+  display: block;
+}
+
+.header .aplication {
+  display: none;
+  position: absolute;
+  top: 100%;
+  border: 1px solid black;
+  z-index: 100;
+}
+
+.header .aplication ul {
+  list-style-type: none;
+  background: white;
+  margin: 0;
+  padding-inline-start: 0;
+  font-weight: bold;
+}
+
+.header .aplication li {
+  padding: 7px 30px;
+}
+
+.header .aplication a {
+  text-decoration: none;
+  color: black;
+}
+
+.header .aplication li:hover a {
+  color: white;
+}
+
+.header .aplication li:hover {
+  background: rgb(0, 162, 255);
+}
+
+header .header-contact {
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.header .header-information > div {
+  flex-grow: 1;
+}
+
+.header .header-navigation-homepage > a,
+.header .header-information-user > a,
+.header-information-cart > a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.header-wall {
+  margin: auto;
+}
+
+.header-contact a {
+  color: white;
+}
+
+.header .aplication a {
+  text-transform: uppercase;
+}
+.header .navigation-liked,
+.header .header-information-cart {
+  position: relative;
+}
+.header .navigation-liked i {
+  font-size: 20px;
+}
+.header .navigation-liked .liked,
+.header .user-cart .liked {
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  background-color: rgba(255, 255, 255, 0.747);
+  color: black;
+  padding: 2px 9px;
+  border-radius: 15px;
+}
+.header .user-cart .liked {
+  top: 25px;
+  right: 15px;
+}
+.header .header-information-admin {
+  flex-grow: unset !important;
+  padding: 0 50px;
+}
+.header .header-admin {
+  justify-content: right !important;
+}

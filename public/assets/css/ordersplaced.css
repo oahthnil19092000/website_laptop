@@ -1,0 +1,33 @@
+.article-ordersplaced section {
+  margin: 50px auto;
+  padding: 50px 5%;
+  background-color: white;
+  border: 2px solid grey;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+  width: 80%;
+}
+.article-ordersplaced h1 {
+  color: transparent;
+  background: linear-gradient(to right, rgba(0, 88, 72), rgb(48, 3, 121));
+  -webkit-background-clip: text;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.article-ordersplaced table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid grey;
+}
+.article-ordersplaced th,
+.article-ordersplaced td {
+  padding: 10px;
+}
+
+.article-ordersplaced td:nth-child(1)[colspan="4"] {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: bolder;
+}

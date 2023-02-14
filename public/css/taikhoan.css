@@ -1,0 +1,63 @@
+
+.thongtintaikhoan{
+    border-radius: 2px;
+    position: relative;
+    display: block;
+}
+.category-tk{
+    position: relative;
+    font-size: 1rem;
+}
+.category-taikhoan {
+    padding: 0 0 8px 0;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 10px;
+    display: block;
+}
+.category-tk__link{
+    position: relative;
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #2f2b2b;
+    display: block;
+  }
+  .category-tk__link:hover {
+    color: rgb(231, 83, 29);
+  }
+.thongtin-heading{
+    margin: 0;
+    text-align: center
+}
+.chitietthongtin{
+    width: 100%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.chitiettk > div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.cttk{
+    margin-left: 20px;
+}
+.thongtin-lable{
+    color: blue;
+    width: 15%;
+}
+.dmsp-thongtintk{
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.thongtin-heading{
+    justify-content: center;
+    font-size: 1.5rem;
+    color: royalblue;
+    margin-bottom: 10px;
+}

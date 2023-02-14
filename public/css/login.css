@@ -1,0 +1,501 @@
+@charset "UTF-8";
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto&family=Rubik:ital@1&display=swap');
+*{  
+font-family: 'Roboto', sans-serif;
+}
+
+.modal__body{
+    --growth-from: 0.7;
+    --growth-to: 1;
+    margin: 50px 400px;
+    position: relative;
+    animation: growth linear 0.1s;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, white, #fda2ba);
+    background-size: 100% 100%;
+    top:0;
+    z-index: 1;
+    margin-left: -10px;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+     -moz-animation-duration: 1s;
+       -o-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+     -moz-animation-fill-mode: both;
+       -o-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated.hinges {
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+       -o-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+       -o-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.animated.snail {
+  -webkit-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+       -o-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {-webkit-transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+  0%, 100% {-moz-transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+  0%, 100% {-o-transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    border-radius: 10px;
+    height: 85%;
+}
+.login .login{
+    border: 2px solid rgba(128, 128, 128, 0.623);
+    margin: 0;
+    background-color: whitesmoke;
+    height: 100%;
+}
+.login .modal-dialog{
+    width: 350px;
+}
+
+.login .modal-title{
+    text-align: center;
+}
+.login .modal-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 0;
+    margin-top: 0px;
+    padding: 10px 20px 20px;
+}
+.login .close{
+    height: 25px;
+    /* margin-left: 18%; */
+}
+.login .modal-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:right;
+    border: 0 none;
+    padding: 15px 15px 15px;
+/*     padding: 11px 15px; */
+}
+.login .modal-body{
+    background-color: whitesmoke;
+}
+.login .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.login .division .line {
+    border-top: 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+}
+.login .division .line.l {
+    left: 0;
+}
+.login .division .line.r {
+    right: 0;
+}
+.login .division span {
+    color: #424242;
+    font-size: 17px;
+}
+.login .box .social {
+    float: none;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+.login .social .circle{
+    background-color: #EEEEEE;
+    color: #EEEEEE;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 17px;
+    padding: 15px;
+}
+.login .social .circle .fa{
+    font-size: 16px;
+}
+.login .social .facebook{
+    background-color: #455CA8;
+    color: #EEEEEE;
+}
+.login .social .google{
+    background-color: #fda2ba;
+}
+.login .social .github{
+    background-color: #403A3A;
+}
+.login .facebook:hover{
+    background-color: #6E83CD;
+}
+.login .google:hover{
+    background-color: #FF7566;
+}
+.login .github:hover{
+    background-color: #4D4D4d;;
+}
+.login .forgot {
+    color: #424242;
+    margin-left: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.login .btn-login, .registerBox .btn-register{
+    background-color: #fda2ba;
+    border-color: #fda2ba;
+    border-width: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    width: 87.5%;
+}
+.login .btn-login:hover, .registerBox .btn-register:hover{
+    background-color: #fda2ba;
+    color: #FFFFFF;
+}
+.login .form-control{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFFFFF;
+}
+.login .form-control:hover{
+    background-color: rgba(0,0,0,.16);
+}
+.login .form-control:focus{
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+    background-color: rgba(0,0,0,0.23);
+    color: #FFFFFF;
+}
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+    border-radius: 3px;
+    border: none;
+    color: #333333;
+    font-size: 16px;
+    height: 30px;
+    margin: 0 25px;
+    margin-bottom: 15px;
+    padding: 13px 12px;
+    width: 80%;
+}
+
+
+@media (max-width:400px){
+    .login .modal-dialog{
+        width: 100%;
+    }
+}
+
+.big-login, .big-register{
+    background-color: #fda2ba;
+    color: #FFFFFF;
+    border-radius: 7px;
+    border-width: 2px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.big-login:hover{
+    background-color: #fda2ba;
+    color: #FFFFFF;
+}
+.big-register{
+    background-color: rgba(0,0,0,.0);
+    color: #fda2ba;
+    border-color: #fda2ba;
+}
+.big-register:hover{
+    border-color: #fda2ba;
+    color:  #fda2ba;
+}
+.fa-github::before{
+    content: "\f09b";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 20px;
+}
+.fa-google-plus::before{
+    content: "\f0d5";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 20px;
+}
+.fa-facebook::before{
+    content: "\f09a";
+    display: inline;
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+}
+
+/* auth form */
+.auth-form {
+  width: 500px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.auth-form__group{
+  display: flex;
+}
+.auth-form__container {
+  border: 2px solid #68a7e0;
+  border-radius: 10px;
+  padding: 20px 32px;
+}
+.auth-form__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  margin-top: 10px;
+}
+.auth-form__group-icon{
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+.dangky {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.dangnhap {
+  font-size: 1rem;
+  font-weight: 400;
+  color: orangered;
+  cursor: pointer;
+}
+.auth-form__form {
+  margin-top: 16px;
+}
+.auth-form__input {
+  width: 94%;
+  height: 30px;
+  margin-top: 12px;
+  padding: 0 12px;
+  font-size: 0.8rem;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  outline: none;
+}
+.auth-form__input:focus {
+  border-color: #888;
+}
+.auth-form__chinhsach {
+  margin-top: 18px;
+}
+.auth-form__policy-text {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0 2px;
+}
+.auth-form__text-link {
+  text-decoration: none;
+  color: #ee4d2d;
+}
+.auth-form__nut {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.auth-form__nut-back {
+  margin-right: 8px;
+}
+.auth-form_mangxh {
+  background-color: #f5f5f5;
+  padding: 12px 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.auth-form_mangxh-icon {
+  font-size: 1.4rem;
+}
+.auth-form_mangxh--facebook {
+  color: white;
+  background-color: #4b6baa;
+}
+.auth-form_mangxh--facebook .auth-form_mangxh-icon {
+  color: white;
+}
+.auth-form_mangxh-title {
+  margin: 0 15px;
+}
+.auth-form_mangxh--google {
+  background-color: white;
+}
+/* login form */
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .auth-form__help-link {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #939393;
+  }
+  .auth-form__help-gach {
+    display: block;
+    height: 17px;
+    border-left: 1px solid #eaeaea;
+    margin: 4px 16px 0;
+  }
+  .auth-form__help-quenmk {
+    color: orangered;
+  }
+  /* header with search */
+  .header-with-search {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    margin: 0 8px;
+  }
+  
+  .header__logo {
+    width: 200px;
+    display: flex;
+  }
+  .header__logo-link {
+    color: transparent;
+    text-decoration: none;
+  }
+  .header__logo-name-link {
+    color: rgb(241, 191, 24);
+    text-decoration: none;
+    margin-top: 10px;;
+  }
+  .logo-name {
+    align-items: center;
+  }
+  .logo-img {
+    height: 80px;
+    width: 80px;
+    margin-left: 0;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  .header_search {
+    flex: 1;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+  }
+  .langach{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+  }
+.gach{
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+  flex: 1;
+}
+.or{
+  color: #ccc;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+.auth-form__form1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.auth-form__fb{
+   background: #95bee4;
+   display: flex;
+   border: 1px solid #3189d7;
+   color: rgba(0,0,0,.87);
+   width: auto;
+   font-size: 1rem;
+   height: 35px;
+   align-items: center;
+   border-radius: 20px;
+}
+.auth-form-icon{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  color: rgb(57 10 230);
+  font-size: 1.5rem;
+}
+label{
+  width: 55%;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}

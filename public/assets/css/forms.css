@@ -1,0 +1,223 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+.main-forms input,
+.main-forms select,
+textarea {
+  padding: 10px;
+  font-size: 17px;
+  margin: 5px 0;
+  border-radius: 3px;
+  width: 100%;
+}
+.main-forms select,
+.main-forms input {
+  width: calc(100% + 24.25px);
+}
+.article-register,
+.login-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-login {
+  width: 80%;
+  margin: auto;
+}
+.article-addproduct {
+  width: 100%;
+  margin: auto;
+}
+.article-addproduct table {
+  width: 33%;
+}
+.article-register section,
+.article-login section,
+.article-addproduct section {
+  margin: 50px auto;
+  padding: 50px 5%;
+  background-color: white;
+  border: 2px solid grey;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+  min-width: 80%;
+}
+.article-addproduct section {
+  padding: 50px 2%;
+}
+.article-register .register-container,
+.article-login .login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-register h1,
+.article-login h1,
+.article-addproduct h1 {
+  color: transparent;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  -webkit-background-clip: text;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.article-register .register-form,
+.article-login .login-form,
+.article-addproduct .addproduct-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-register .register-item,
+.article-login .login-item,
+.article-addproduct .addproduct-item {
+  display: flex;
+  justify-content: space-around;
+}
+.article-login .login-item > table {
+  width: 50%;
+}
+.article-register .register-item > table {
+  width: 40%;
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.article-register td:nth-child(1) {
+  font-weight: bold;
+  font-size: 20px;
+  color: transparent;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  -webkit-background-clip: text;
+}
+.submit-item {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+.submit-item > .btn {
+  padding: 10px 100px;
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.article-login .submit-item > .btn {
+  padding: 10px 50px;
+}
+.article-register a,
+.article-login a {
+  color: transparent;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  -webkit-background-clip: text;
+}
+.article-register .submit-container .btn:hover a,
+.article-login .submit-container .btn:hover a {
+  color: white;
+}
+.article-login td,
+.article-register td {
+  position: relative;
+}
+.article-login i.fas.fa-eye-slash,
+.article-login i.fas.fa-eye,
+.article-register i.fas.fa-eye-slash,
+.article-register i.fas.fa-eye {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.article-register i.fas.fa-eye-slash,
+.article-register i.fas.fa-eye {
+  right: -5px;
+}
+.article-addproduct td {
+  padding: 0 15px;
+}
+.article-addproduct td[colspan="2"][rowspan="4"] textarea {
+  width: 100%;
+  height: 150px;
+  margin: 5px 0px;
+  resize: none;
+}
+.article-addproduct #parameters-table {
+  width: 30%;
+  border-collapse: collapse;
+  height: fit-content;
+}
+.article-addproduct #parameters-table tbody {
+  vertical-align: top;
+}
+.article-addproduct #parameters-table td {
+  border: 2px solid rgb(0, 125, 241);
+  box-shadow: 0 0 5px 2px grey;
+}
+.article-addproduct #parameters-table td:nth-child(1) {
+  background: rgb(0, 125, 241);
+  border: 2px solid rgb(150, 139, 139);
+  color: white;
+  width: 66%;
+  border-right: 0;
+}
+.article-addproduct #parameters-table th {
+  text-align: left;
+  padding: 5px;
+}
+.article-addproduct input[type="file"]::file-selector-button {
+  border: 2px solid rgb(0, 125, 241);
+  color: transparent;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  -webkit-background-clip: text;
+}
+.article-addproduct input[type="file"]::file-selector-button:hover {
+  border: 2px solid rgb(0, 125, 241);
+  color: white;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+}
+.btn-signup:hover:after {
+  content: "\f061";
+  display: inline;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 10px;
+}
+.btn-cancel:hover:before {
+  content: "\f060";
+  display: inline;
+  color: white;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+.article-addproduct .product-added-img {
+  display: flex;
+  justify-content: left;
+  height: 110px;
+}
+.article-addproduct .product-added-img img {
+  height: 100px;
+  padding: 5px 10px;
+}
+.article-addproduct input[type="file"] {
+  color: transparent;
+  position: relative;
+}
+.article-addproduct input[type="file"]:after {
+  content: "(1 hình)";
+  display: inline;
+  color: black;
+  position: absolute;
+  right: 0;
+  top: 13px;
+}
+.error {
+  color: red;
+  display: block;
+}
+.table-1 td:nth-child(1) {
+  padding: 0;
+  width: 122px;
+}

@@ -1,0 +1,65 @@
+.swiper-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.category-brands {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid white;
+  background: white;
+}
+
+.category-brands {
+  width: 90%;
+}
+
+.swiper-slide {
+  margin-right: 8px;
+}
+
+.swiper-slide img {
+  opacity: 0.6;
+}
+
+.swiper-slide img:hover {
+  opacity: 1;
+}
+
+nav .btn {
+  padding: 2px 12px;
+  border-radius: 20px;
+  font-size: 20px;
+  border: 0.5px solid black;
+  color: rgb(0, 162, 255) !important;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.438);
+  top: 2px;
+  display: none;
+}
+
+nav .btn:hover {
+  border: 0.5px solid grey;
+  color: white;
+  background: grey;
+}
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+}
+
+nav .btn-toleft {
+  left: 10px;
+}
+
+nav .btn-toright {
+  right: 10px;
+}

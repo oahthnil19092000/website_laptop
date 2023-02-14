@@ -1,0 +1,89 @@
+.article-container {
+  height: 640px;
+  width: calc(98% - 40px);
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 0 10px 2px grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.article-container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: 40px;
+}
+.article-container .article-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.article-container .statistical-container {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.article-container .statistical-container > div {
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  min-height: 200px;
+  min-width: 300px;
+  margin: 20px 0;
+  padding: 5px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+.article-container .statistical-container > div > div {
+  background: white;
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+.article-container .statistical-container > div > div p {
+  color: transparent;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  -webkit-background-clip: text;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.article-container .statistical-container > div > div > div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  color: transparent;
+  background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+  -webkit-background-clip: text;
+  font-size: 30px;
+  font-weight: bold;
+}
+.article-container .statistical-container > div > div .small-statistical {
+  font-size: 70px;
+  font-weight: 400;
+}
+.article-container input {
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+.article-container .btn-month {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.btn-secondary {
+  color: black !important;
+}
+.btn-secondary:hover {
+  color: white !important;
+}
+.label-search {
+  width: 120px;
+}
+.navInActicle {
+  width: 1100px;
+  margin: 0 auto;
+}
